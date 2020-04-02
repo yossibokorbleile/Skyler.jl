@@ -34,8 +34,8 @@ Skyler is produced and maintained by
 Yossi Bokor \
 <yossi.bokor@anu.edu.au> \
 <yossi.bokor@sydney.edu.au> \
-<yossi@gtfo.top> \
-[Personal Webpage](http://gtfo.top/yossi.html) \
+<yossi@yossi.eu> \
+[Personal Webpage](http://yossi.eu) \
 and \
 Christopher Williams\
 <christopher.williams@anu.edu.au>\
