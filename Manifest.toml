@@ -24,6 +24,7 @@ git-tree-sha1 = "649c08a5a3a513f4662673d3777fe6ccb4df9f5d"
 uuid = "4fba245c-0d91-5ea0-9b3e-6abc04ee57a9"
 version = "2.8.7"
 
+
 [[AssetRegistry]]
 deps = ["Distributed", "JSON", "Pidfile", "SHA", "Test"]
 git-tree-sha1 = "b25e88db7944f98789130d7b503276bc34bc098e"
@@ -38,6 +39,12 @@ deps = ["Libdl", "Pkg", "SHA", "URIParser", "Unicode"]
 git-tree-sha1 = "46cf2c1668ad07aba5a9d331bdeea994a1f13856"
 uuid = "9e28174c-4ba2-5203-b857-d8d62c4213ee"
 version = "1.0.1"
+
+[[BinaryProvider]]
+deps = ["Libdl", "Logging", "SHA"]
+git-tree-sha1 = "428e9106b1ff27593cbd979afac9b45b82372b8c"
+uuid = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
+version = "0.5.9"
 
 [[Blink]]
 deps = ["Base64", "BinDeps", "Distributed", "JSExpr", "JSON", "Lazy", "Logging", "MacroTools", "Mustache", "Mux", "Reexport", "Sockets", "WebIO", "WebSockets"]
@@ -86,6 +93,7 @@ deps = ["FixedPointNumbers", "Random"]
 git-tree-sha1 = "c73d9cfc2a9d8433dc77f5bff4bddf46b1d78c20"
 uuid = "3da002f7-5984-5a60-b8a6-cbb66c0b333f"
 version = "0.10.3"
+
 
 [[Colors]]
 deps = ["ColorTypes", "FixedPointNumbers", "InteractiveUtils", "Reexport"]
@@ -522,6 +530,7 @@ git-tree-sha1 = "1ee72dd6d45c320295d64b17f9c108e3e3c83e0f"
 uuid = "4536629a-c528-5b80-bd46-f80d51c5b363"
 version = "0.3.9+3"
 
+
 [[OpenSSL_jll]]
 deps = ["Libdl", "Pkg"]
 git-tree-sha1 = "d2a6f25262d568b5a7e454cf7ff5066a79d16c7d"
@@ -536,9 +545,9 @@ version = "0.5.3+3"
 
 [[Optim]]
 deps = ["Compat", "FillArrays", "LineSearches", "LinearAlgebra", "NLSolversBase", "NaNMath", "Parameters", "PositiveFactorizations", "Printf", "SparseArrays", "StatsBase"]
-git-tree-sha1 = "62054d469d3631960e3f472ceb8624be5b11c34d"
+git-tree-sha1 = "33af70b64e8ce2f2b857e3d5de7b71f67715c121"
 uuid = "429524aa-4258-5aef-a3af-852621145aeb"
-version = "0.20.6"
+version = "0.21.0"
 
 [[Opus_jll]]
 deps = ["Libdl", "Pkg"]
