@@ -38,7 +38,7 @@ Yossi Bokor \
 [Personal Webpage](http://yossi.eu) \
 and \
 Christopher Williams\
-<christopher.williams@anu.edu.au>\
+<christopher.williams@anu.edu.au>
 ## Installation
 To install Skyler, run the following in `Julia`:
 ```julia
