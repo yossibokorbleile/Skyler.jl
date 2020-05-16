@@ -536,7 +536,7 @@ function skyler(points, sample_epsilon, angle_condition, inner_radius, outer_rad
 		MU, SIGMA, PI = model_fit(data, v_guess, sigma, E, S, EM_it)
 		mu_ans = collect(values(MU))
 		mu_ans = vcat([datum' for datum in mu_ans]...)
-		return mu_ans'
+		return mu_ans', boundaries
 	else
 		println("Error: output option 'out' selected is not valid, please choose from 'model' to obtain a model of the underlying structure, or 'struct' to receive a DataFrame indicating which strata a point as been associated with and the dimension of this strata, and the boundary relations.")
 		return []
