@@ -4,7 +4,7 @@ keywords = ["topological data analysis", "stratified space learning", "point clo
 license = "MIT"
 desc = "Modelling embeddings of stratified spaces from point cloud samples"
 author = "Yossi Bokor <yossi.bokor@anu.edu.au>"
-version = "0.1.1"
+version = "0.1.2"
 
 [deps]
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
