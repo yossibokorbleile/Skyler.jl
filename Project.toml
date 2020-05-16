@@ -23,7 +23,7 @@ SimpleGraphs = "55797a34-41de-5266-9ec1-32ac4eb504d3"
 SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 
 [compat]
-CSV = "^0.5.16"
+CSV = "^0"
 DataFrames = "^0.20.0"
 Distances = "^0.8.2"
 Distributions = "^0.23.2"
