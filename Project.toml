@@ -24,7 +24,7 @@ SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 
 [compat]
 CSV = "^0"
-DataFrames = "^0.20.0"
+DataFrames = "^0.20.0, 0.21"
 Distances = "^0.8.2"
 Distributions = "^0.23.2"
 Eirene = "^1"
