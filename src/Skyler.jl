@@ -507,7 +507,7 @@ function skyler(points, sample_epsilon, angle_condition, inner_radius, outer_rad
 			end
 		end
 		
-		sigma = [sample_epsilon for i in 1:length(boundaries)]
+		sigma = [(sample_epsilon^2)/2 for i in 1:length(boundaries)]
 		
 		S = []
 		for i in 1:length(boundaries)
@@ -562,7 +562,7 @@ dir = pwd()
 	cd("..")
 	cd("Examples")
 	
-	points= CSV.read("Sample-1.csv", header=false)
+	points= convert(Array,CSV.read("Sample-1.csv", header=false))
 	structure = skyler(points, 0.01, 0.08, 0.1, 1/4, 0.03, 0.09, out="test")
 	saved_partition = CSV.read("Partition-1.csv", header=false)
 	
@@ -583,7 +583,7 @@ function test_2()
 	
 	structure = skyler(points,0.01, 0.08, 0.1, 1/4, 0.03, 0.09, out = "test")
 	
-	if partition[3][1] == [[1],[2],[3]]
+	if structure[3][1] == [[1],[2],[3]]
 		return []
 	else
 		println("Error: test_2, structure[3][1] = ")
