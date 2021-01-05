@@ -5,6 +5,7 @@
 Skyler is licensed under an MIT license <https://opensource.org/licenses/MIT>.
 
 You should have received a copy of the MIT Public License along with Skyler.  If not, please see <https://opensource.org/licenses/MIT>.
+[![DOI](https://zenodo.org/badge/252151758.svg)](https://zenodo.org/badge/latestdoi/252151758)
 
 
 ```
