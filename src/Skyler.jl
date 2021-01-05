@@ -890,7 +890,7 @@ function model_fit(data, muT, sigma, E, S; EM_it = 3)
 		#println("Current vertices:")
 		#println(mu)
 
-		print("For iteration: ", it," cost is: ", -C(mu1) + log.(Pi) )
+		print("For iteration: ", it," cost is: ", -C(mu1) + sum(log.(Pi)) )
 
 		#Update parameters
 		
@@ -915,7 +915,7 @@ function Save_PPC(ppc::PartitionedPointCloud, path::String)
 end # Save_PPC
 
 #### Main functions and wrappers ####
-function skyler(points::A, sample_epsilon::P, radius::R; out = "model", EM_it = 5, sig = sample_epsilon/2) where {P<:Number, Q<:Number, R<:Number, A<:Union{LinearAlgebra.Adjoint,AbstractArray}} #wrapper for obtaining the partition
+function skyler(points::A, sample_epsilon::P, radius::R; out = "model", EM_it = 3, sig = sample_epsilon/2) where {P<:Number, Q<:Number, R<:Number, A<:Union{LinearAlgebra.Adjoint,AbstractArray}} #wrapper for obtaining the partition
 
 	dimension = size(points,1)
 	ppc = Partition_Point_Cloud(points, sample_epsilon, radius, (3*radius)/2 + 2*sample_epsilon, 3*sample_epsilon)
