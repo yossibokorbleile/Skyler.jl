@@ -890,7 +890,7 @@ function model_fit(data, muT, sigma, E, S; EM_it = 3)
 		#println("Current vertices:")
 		#println(mu)
 
-		print("For iteration: ", it," cost is: ", -C(mu1))
+		print("For iteration: ", it," cost is: ", -C(mu1) + log.(Pi) )
 
 		#Update parameters
 		
