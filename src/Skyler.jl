@@ -983,9 +983,13 @@ end
 
 function skyler(ppc::PartitionedPointCloud, sample_epsilon::P; EM_it=3, sig=sample_epsilon/2) where {P<:Number} #wrapper for modelling a point cloud
 	points=ppc.Points
+
+	dimension = size(points,1)
 	vertices = size(collect(ppc.Dimensions[0]),1)
 	vertex_guess = Array{Float64}(undef, dimension,0)
 	for i in 1:vertices
+		v_i = zeros(dimension, 1)
+
 		for j in collect(ppc.Strata[i])
 			v_i .+= points[:, j]
 		end
@@ -1029,7 +1033,9 @@ function skyler(ppc::PartitionedPointCloud, sample_epsilon::P; EM_it=3, sig=samp
 			v_guess[i,j] = vertex_guess[j,i]
 		end
 	end
-	MU, SIGMA, PI, E = model_fit(data, v_guess, sigma, E, S, EM_it)
+
+	MU, SIGMA, PI, E = model_fit(data, v_guess, sigma, E, S, EM_it=EM_it)
+
 	mu_ans = collect(values(MU))
 	mu_ans = vcat([datum' for datum in mu_ans]...)
 	return mu_ans', vertex_guess
