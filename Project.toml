@@ -2,7 +2,7 @@ name = "Skyler"
 uuid = "804faec8-72f5-11ea-307d-47b816e9b733"
 keywords = ["topological data analysis", "stratified space learning", "point cloud samples", "modelling embeddings"]
 license = "MIT"
-desc = "Modelling embeddings of stratified spaces from point cloud samples"
+desc = "Modelling embeddings of graphs from point cloud samples"
 author = "Yossi Bokor <yossi.bokor@anu.edu.au>"
 version = "1.0.0"
 
