@@ -33,8 +33,6 @@ Skyler is free software: you can redistribute it and/or modify
 Skyler is produced and maintained by
 
 Yossi Bokor \
-<yossi.bokor@anu.edu.au> \
-<yossi.bokor@sydney.edu.au> \
 <yossi@yossi.eu> \
 [Personal Webpage](http://yossi.eu) \
 and \
@@ -49,6 +47,8 @@ Pkg.add("Skyler")
 
 ## Functionality
 - Skyler identifies the coarsest abstract graph structure underlying a point cloud, and modells it. Currently, we are restricted to graphs with linear edges which satisfy conditions detailed below. 
+- You can read the article [Reconstructing linearly embedded graphs: A first step to stratified space learning](https://www.aimsciences.org/article/doi/10.3934/fods.2021026) which introduces the algorithm used in Skyler.
+ </ul>
 
 
 ### Obtaining Abstract Structure
