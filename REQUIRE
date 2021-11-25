@@ -1,8 +1,19 @@
-julia 1.1
+julia
 CSV
-Hungarian
 DataFrames
-LinearAlgebra
 Distances
-NearestNeighbours
-PlotlyJS
+Distributions
+LinearAlgebra
+NearestNeighbors
+Optim
+Plots
+QuadGK
+Random
+SimpleGraphs
+SparseArrays
+ProgressMeter
+JLD
+SpecialFunctions 
+Calculus
+NNlib
+FiniteDiff
