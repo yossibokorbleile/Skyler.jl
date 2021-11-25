@@ -389,10 +389,10 @@ End license text.</code></pre>
 <h2>Contributors</h2>
 <p>Skyler is produced and maintained by</p>
 <p>Yossi Bokor<br />
-<a href="mailto:yossi.bokor@anu.edu.au" class="email">yossi.bokor@anu.edu.au</a><br />
-<a href="mailto:yossi.bokor@sydney.edu.au" class="email">yossi.bokor@sydney.edu.au</a><br />
-<a href="mailto:yossi@gtfo.top" class="email">yossi@gtfo.top</a><br />
-<a href="http://gtfo.top/yossi.html">Personal Webpage</a><br />
+<!--<a href="mailto:yossi.bokor@anu.edu.au" class="email">yossi.bokor@anu.edu.au</a><br />
+<a href="mailto:yossi.bokor@sydney.edu.au" class="email">yossi.bokor@sydney.edu.au</a><br />-->
+<a href="mailto:yossi@yossi.eu" class="email">yossi@yossi.eu</a><br />
+<a href="http://yossi.eu">Personal Webpage</a><br />
 and<br />
 Christopher Williams<br />
 <a href="mailto:christopher.williams@anu.edu.au" class="email">christopher.williams@anu.edu.au</a><br />
@@ -404,7 +404,8 @@ Pkg.add(&quot;Skyler&quot;)</code></pre>
 <h2>Functionality</h2>
 <ul>
 <li>Skyler identifies the coarsest abstract graph structure underlying a point cloud, and modells it. Currently, we are restricted to graphs with linear edges which satisfy conditions detailed below.</li>
-</ul>
+<li>You can read the article <a href="https://www.aimsciences.org/article/doi/10.3934/fods.2021026">Reconstructing linearly embedded graphs: A first step to stratified space learning</a> which introduces the algorithm used in Skyler.</li>
+ </ul>
 <div id="obtaining-abstract-structure" class="section level3">
 <h3>Obtaining Abstract Structure</h3>
 <p>As input Skyler accepts a point cloud, as an <span class="math inline">\(d \times n\)</span> array, a parameter <span class="math inline">\(\varepsilon\)</span>, an inner radius, an outer radius, and an angle condition. The parameter <span class="math inline">\(\varepsilon\)</span> is the same paramter such that the point cloud is an <span class="math inline">\(\varepsilon\)</span>-sample of an embedded graph <span class="math inline">\(|G|\)</span>. The radii and angle condition are realted to assumptions on the embedding of <span class="math inline">\(|G|\)</span>, and their derivations can be found in (DGC ARTICLE I HOPE). To obtain the abstract graph <span class="math inline">\(G\)</span>, run</p>
