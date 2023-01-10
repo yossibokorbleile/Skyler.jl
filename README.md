@@ -53,7 +53,7 @@ Pkg.add("Skyler")
 
 ### Obtaining Abstract Structure
 
-As input Skyler accepts a point cloud, as an $d \times n$ array, a parameter $\varepsilon$, an inner radius, an outer radius, and an angle condition. The parameter $\varepsilon$ is the same paramter such that the point cloud is an $\varepsilon$-sample of an embedded graph $|G|$. The radii and angle condition are realted to assumptions on the embedding of $|G|$, and their derivations can be found in (DGC ARTICLE I HOPE). To obtain the abstract graph $G$, run 
+As input Skyler accepts a point cloud, as an $d \times n$ array, a parameter $\varepsilon$, an inner radius, an outer radius, and an angle condition. The parameter $\varepsilon$ is the same paramter such that the point cloud is an $\varepsilon$-sample of an embedded graph $|G|$. The radii and angle condition are realted to assumptions on the embedding of $|G|$, and their derivations can be found in [Reconstructing linearly embedded graphs: A first step to stratified space learning](https://www.aimsciences.org/article/doi/10.3934/fods.2021026). To obtain the abstract graph $G$, run 
 
 ```julia
 ppc, model_verts, avg_verts = skyler(points, sample_epsilon, radius, EM_it=3, sigma=sample_epsilon/2)
