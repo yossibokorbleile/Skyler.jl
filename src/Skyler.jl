@@ -17,15 +17,6 @@ using CSV
 using DataFrames
 using LinearAlgebra
 using NearestNeighbors
-
-#=
-using Distributed
-@everywhere using CSV
-@everywhere using DataFrames
-@everywhere using LinearAlgebra
-@everywhere using NearestNeighbors
-=#
-
 using Distances
 using Optim
 using SimpleGraphs
@@ -35,7 +26,7 @@ using QuadGK
 using Plots
 using JLD
 using SpecialFunctions
-using SharedArrays
+#using SharedArrays
 using Calculus
 using NNlib
 using FiniteDiff
@@ -172,7 +163,7 @@ end
 
 function Find_Groups(distance_matrix::A, dictionary_of_points::Dict{Int, Set}, dimension::T, connection_threshold::W) where {T <: Number, W<: Number, A<:AbstractArray} # obtain the clusters of points which look 'dimensional'  dimensional
 	points = collect(dictionary_of_points[dimension]) #create a set of points
-	G = SimpleGraph()
+	G = UndirectedGraph()
 	for i in points
 		add!(G, i)
 	end
@@ -1047,9 +1038,9 @@ function Load_Example(i)
 	cd(@__DIR__)
 	cd("..")
 	cd("Examples")
-	points = CSV.read("Sample-$i.csv", header=false)
+	points = Matrix(CSV.read("Sample-$i.csv", DataFrame, header=false))
 	cd(dir)
-	return convert(Array,points)
+	return points
 end
 
 #### unittest ####
