@@ -11,7 +11,7 @@ You should have received a copy of the MIT Public License along with Skyler.  If
 ```
 Begin license text.
 Skyler
-Copyright (C) 2020 Yossi Bokor
+Copyright (C) 2020, 2021, 2022, 2023 Yossi Bokor Bleile
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -32,7 +32,7 @@ Skyler is free software: you can redistribute it and/or modify
 
 Skyler is produced and maintained by
 
-Yossi Bokor \
+Yossi Bokor Bleile \
 <yossi@yossi.eu> \
 [Personal Webpage](http://yossi.eu) \
 and \
